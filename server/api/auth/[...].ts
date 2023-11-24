@@ -13,6 +13,10 @@ export default NuxtAuthHandler({
   },
   secret: '633c945b94bb11d745725248b5daa7d2',
   callbacks: {
+    async redirect({ url, baseUrl }) {
+      return 'http://3.216.72.67:3000'
+    },
+
     // Callback when the JWT is created / updated, see https://next-auth.js.org/configuration/callbacks#jwt-callback
     jwt: async ({ token, user }) => {
       const isSignIn = user ? true : false
