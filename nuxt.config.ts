@@ -4,10 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@sidebase/nuxt-auth', '@nuxt/ui'],
   auth: {
-    globalAppMiddleware: true,
-    redirect: {
-      signIn: 'http://3.216.72.67:3000/login',
-    },
     baseUrl: 'http://3.216.72.67:3000',
     provider: {
       type: 'authjs',
