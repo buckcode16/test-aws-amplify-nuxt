@@ -79,12 +79,12 @@
             </button>
             <p class="text-sm font-light text-gray-500 dark:text-gray-400">
               Don’t have an account yet?
-              <NuxtLink
-                to="/register"
+              <a
+                href="#"
                 class="font-medium text-primary-600 hover:underline dark:text-primary-500"
               >
                 Sign up
-              </NuxtLink>
+              </a>
             </p>
           </form>
         </div>

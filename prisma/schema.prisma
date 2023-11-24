@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = env("postgresql://postgres:root@localhost:5432/test-aws-amplify-nuxt?schema=public")
 }
 
 model User {
