@@ -5,14 +5,15 @@ export default defineNuxtConfig({
   modules: ['@sidebase/nuxt-auth', '@nuxt/ui'],
   auth: {
     globalAppMiddleware: true,
-    baseUrl: process.env.AUTH_ORIGIN,
+    baseUrl: 'http://3.216.72.67:3000',
     provider: {
       type: 'authjs',
     },
   },
   runtimeConfig: {
-    dbUrl: process.env.DB_URL,
-    authSecret: process.env.AUTH_SECRET,
+    dbUrl:
+      'postgresql://postgres:root@localhost:5432/test-aws-amplify-nuxt?schema=public',
+    authSecret: '633c945b94bb11d745725248b5daa7d2',
   },
   colorMode: {
     preference: 'light',
