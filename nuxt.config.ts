@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   auth: {
     globalAppMiddleware: true,
     redirect: {
-      signin: '/login',
+      signIn: '/login',
     },
     baseUrl: 'http://3.216.72.67:3000',
     provider: {
