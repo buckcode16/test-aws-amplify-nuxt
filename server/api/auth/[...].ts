@@ -9,7 +9,7 @@ const prisma = new PrismaClient()
 export default NuxtAuthHandler({
   pages: {
     // Change the default behavior to use `/login` as the path for the sign-in page
-    signIn: 'pages/login',
+    signIn: '/login',
   },
   secret: '633c945b94bb11d745725248b5daa7d2',
   callbacks: {
