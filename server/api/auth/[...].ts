@@ -9,9 +9,9 @@ const prisma = new PrismaClient()
 export default NuxtAuthHandler({
   pages: {
     // Change the default behavior to use `/login` as the path for the sign-in page
-    signIn: '/login',
+    signIn: 'http://3.216.72.67:3000/login',
   },
-  secret: useRuntimeConfig().authSecret,
+  secret: '633c945b94bb11d745725248b5daa7d2',
   callbacks: {
     // Callback when the JWT is created / updated, see https://next-auth.js.org/configuration/callbacks#jwt-callback
     jwt: async ({ token, user }) => {
